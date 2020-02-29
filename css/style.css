@@ -1,0 +1,85 @@
+.navbar {background: #F97300;}
+.header {
+	background-image: url('../img/Background_1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+}
+.about, .team{
+	margin: 4em 0;
+	padding: 1em;
+	position: relative;
+}
+
+.about h1 {
+	color: #97300;
+	margin: 2em;
+}
+
+.about img {
+	height: 100%;
+	width: 100%;
+	border-radius: 5%;
+}
+button.btn.btn-primary.btn-lg.started {
+	position: absolute;
+	top: 75%;
+	left: 5%;	
+}
+
+.course{
+	width: 15rem;
+	height: 3.5rem;
+	margin-left: -1.0em;
+	color: #007bff;
+	background-color: transparent;
+	line-height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.col.card.about.courses {
+	margin: 15px;
+	text-align: center;
+	border: none;
+	border-radius: 1rem;
+}
+
+div.col.card.about.courses:hover {
+	background-color: #000; 
+    opacity: 0.8; 
+ 	transition-delay: 0.1s;
+  	z-index: 100;
+}
+
+div.col.card.about.courses:hover p.card-text {
+	color: white;
+	transition-delay: 0.1s;
+}
+
+div.col.card.about.courses:hover button.btn.btn-primary.btn-lg {
+	background-color: white;
+	border-color: white;
+	transition-delay: 0.2s;
+	color: #fd7e14;
+}
+
+div.col.card.about.courses:hover img {
+	z-index: 200;
+	
+}
+
+@media (max-width: 992px) {
+	button.btn.btn-primary.btn-lg.started {
+	padding: 0.0rem 0.0rem;
+    font-size: 2rem;
+    position: fixed;
+    width: 100%;
+    left:0%;
+    top: 0%;
+    margin-top: 35.2rem;
+    line-height: 1;
+    border-radius: 0.0rem;
+    z-index: 300;
+}

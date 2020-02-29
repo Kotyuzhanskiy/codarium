@@ -1,75 +1,217 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="uk">
   <head>
-   <title>My Events</title>
-   <meta charset="utf-8">
-   <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>English XATA - курси англійської онлайн</title>
   </head>
-
-  <body>
-
-    <header class="header">
-      <!--<div>
-        <img class="header-logo" src="images/logo.jpg">
-      </div>-->
-      <div>
-        <h1 class="header-app">MY EVENTS. Your planning app</h1>
-      </div>
-      <div>
-        <a class="header-user" href="#">Hello, User!</a>
-      </div>
-    </header>
   
-    <menu>
-      <div class="button-menu">
-        <form>
-          <button class="button">Button 1</button>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo EX.png"  height="30" class="d-inline-block align-top" alt="">
+        курси 
+      </a>    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" data-value="about" href="#">Головна <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Як почати</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Курси
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#travelcourse">для мандрівника</a>
+              <a class="dropdown-item" href="#shcoolcourse">для школяра</a>
+              <a class="dropdown-item" href="#educationcourse">для освіти за кордоном</a>
+              <a class="dropdown-item" href="#businesscourse">для ділової людини</a>
+              <a class="dropdown-item" href="#examcourse">підготовка до іспитів</a>
+              <a class="dropdown-item" href="#jobcourse">для роботи за кордоном</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">курси зі спеціалізованою лексикою</a>
+            </div>
+          </li>
+        </ul>      
+      </div>
+    </nav>
+
+
+<header class="header">
+	
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg started" data-toggle="modal" data-target="#exampleModalCenter">
+  Безкоштовний старт вже сьогодні!
+</button>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Почніть заняття вже сьогодні!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>  
+            <div class="form-group">
+              <label for="exampleInputPassword1">Ім'я</label>
+              <input type="text" class="form-control" id="client-name">
+              <small id="emailHelp" class="form-text text-muted">Вкажіть Ваше им'я</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Електрона скринька</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Вкажіть Вашу електрону скриньку</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Мобільний телефон</label>
+              <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Вкажіть Ваш мобільний телефон</small>
+            </div>            
         </form>
-        <form>
-          <button class="button">Button 2</button>
-        </form>
-        <form>
-          <button class="button">Button 3</button>
-        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Відправити завяку на заняття!</button>
+      </div>
     </div>
-    </menu>
+  </div>
+</div>
 
-    <main class="main">
-      <div>
-        <h1>main</h1>
-        <div class="event">event 1</div>
-        <div class="event">event 2</div>
-        <div class="event">event 3</div>
-        <div class="event">event 4</div>
-        <div class="event">event 5</div>
-        <div class="event">event 6</div>
-        <div class="event">event 7</div>
-        <div class="event">event 8</div>
-        <div class="event">event 9</div>
-        <div class="event">event 10</div>
-        <div class="event">event 11</div>
+</header>
+
+<div class="container" id="">
+  <div class="row">
+
+    <div class="col-sm">
+      <div class="col card about courses" id="travelcourse" style="width: 18rem;">
+      <img src="img/travel.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="badge badge-primary text-wrap course">
+            <h5 class="card-title">для мандрівника</h5>
+        </div>
+        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Отримати курс!
+        </button>
       </div>
-    </main>
+    </div>
+    </div>
 
-    <aside>
-     <div style=" float: right;"><a class="aside-list" href="#"><</a></div>
-      <div><p>sidebar</p></div>  
-      <div>
-        <ul class="aside-list">
-          <li><a href="#">menu item-1</a></li>
-          <li><a href="#">menu item-2</a></li>
-          <li><a href="#">menu item-3</a></li>
-          <li><a href="#">menu item-4</a></li>
-          <li><a href="#">menu item-5</a></li>
-          <li><a href="#">menu item-6</a></li>
-        </ul>
+    <div class="col-sm">
+      <div class="col card about courses" id="shcoolcourse" style="width: 18rem;">
+      <img src="img/schoolboy.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="badge badge-primary text-wrap course">
+            <h5 class="card-title">для школяра</h5>
+        </div>
+        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Отримати курс!
+        </button>
       </div>
-     </aside>
+    </div>
+    </div>
 
-    <footer>
-      <p>footer</p>
-    </footer>
+    <div class="col-sm">
+      <div class="col card about courses" id="educationcourse" style="width: 18rem;">
+      <img src="img/education.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="badge badge-primary text-wrap course">
+            <h5 class="card-title">для освіти за кордоном</h5>
+        </div>
+        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Отримати курс!
+        </button>
+      </div>
+    </div>
+    </div>
 
-   </body>
+    <div class="col-sm">
+      <div class="col card about courses" id="businesscourse" style="width: 18rem;">
+      <img src="img/businessman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="badge badge-primary text-wrap course">
+            <h5 class="card-title">для ділової людини</h5>
+        </div>
+        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Отримати курс!
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="col card about courses" id="examcourse" style="width: 18rem;">
+        <img src="img/exam.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="badge badge-primary text-wrap course">
+              <h5 class="card-title">підготовка до іспитів</h5>
+            </div>
+            <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Отримати курс!</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="col card about courses" id="jobcourse" style="width: 18rem;">
+      <img src="img/worker.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <div class="badge badge-primary text-wrap course">
+            <h5 class="card-title">для роботи за кордоном</h5>
+        </div>
+        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Отримати курс!
+        </button>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+		
+
+		
+
+		
+
+    
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/my.js"></script>
+  </body>
 </html>
+
+
+
