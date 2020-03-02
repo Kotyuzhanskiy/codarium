@@ -15,18 +15,18 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">
         <img src="img/logo EX.png"  height="30" class="d-inline-block align-top" alt="">
-        курси 
+        
       </a>    
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" data-value="about" href="#">Головна <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Як почати</a>
+            <a class="nav-link" href="#start">Як почати</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,9 +39,15 @@
               <a class="dropdown-item" href="#businesscourse">для ділової людини</a>
               <a class="dropdown-item" href="#examcourse">підготовка до іспитів</a>
               <a class="dropdown-item" href="#jobcourse">для роботи за кордоном</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">курси зі спеціалізованою лексикою</a>
-            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teachers">Викладачі</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Контакти</a>
           </li>
         </ul>      
       </div>
@@ -49,13 +55,15 @@
 
 
 <header class="header">
+
+  <div class="jumbotron welcom">
+    <h1 class="display-4">Он лайн вивчення англійської мови</h1>
+    <p class="lead">Вільно керуйте своїм часом: обирайте час, інтенсивність та швидкість свого навчання</p>  
+      <button type="button" class="btn btn-primary btn-lg started-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        Безкоштовний старт вже сьогодні!
+      </button> 
+  </div>
 	
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg started" data-toggle="modal" data-target="#exampleModalCenter">
-  Безкоштовний старт вже сьогодні!
-</button>
-
-
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -94,46 +102,64 @@
 
 </header>
 
+<div class="container" id="start">
+  <div class="row">   
+    <div class="about">
+      <h2 class="block-title">Як почати?</h2>
+        <div>
+          <p>Якщо ви тут, це означає, що Ви вирішили розірвати це коло та почати життя з чистого аркушу: зранку робити зарядку, кинути палити, поважати свого начальника, на вихідних читати та нарешті <span style="font-weight: bold">почати розмовляти англійською!</span> Залишився ще один крок - повідомити нас про своє бажання! Для цього натисніть на кнопку під назвою обранного курсу та вкажіть свої побажання! За декілька хвилин співробітник <span style="font-weight: bold">EX</span> зателефонує Вам задля уточення дати та часу першого заняття!
+          </p>
+        </div>
+    </div>
+  </div>
+</div>  
+
+<h2 class="block-title">Оберіть свій курс</h2>
+
 <div class="container" id="">
-  <div class="row">
+  <div class="card-deck">
 
     <div class="col-sm">
-      <div class="col card about courses" id="travelcourse" style="width: 18rem;">
+      <div class="col card course" id="travelcourse">
       <img src="img/travel.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <div class="badge badge-primary text-wrap course">
+        
             <h5 class="card-title">для мандрівника</h5>
-        </div>
+        
         <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             Отримати курс!
         </button>
+        
       </div>
     </div>
     </div>
 
     <div class="col-sm">
-      <div class="col card about courses" id="shcoolcourse" style="width: 18rem;">
+      <div class="col card course" id="shcoolcourse">
       <img src="img/schoolboy.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <div class="badge badge-primary text-wrap course">
+        
             <h5 class="card-title">для школяра</h5>
-        </div>
-        <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+        
+        <p class="card-text">Мандруйте !</p>
+        
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             Отримати курс!
         </button>
+        
       </div>
     </div>
     </div>
 
     <div class="col-sm">
-      <div class="col card about courses" id="educationcourse" style="width: 18rem;">
+      <div class="col card course" id="educationcourse">
       <img src="img/education.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <div class="badge badge-primary text-wrap course">
+        
             <h5 class="card-title">для освіти за кордоном</h5>
-        </div>
+        
         <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             Отримати курс!
@@ -143,12 +169,12 @@
     </div>
 
     <div class="col-sm">
-      <div class="col card about courses" id="businesscourse" style="width: 18rem;">
+      <div class="col card course" id="businesscourse">
       <img src="img/businessman.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <div class="badge badge-primary text-wrap course">
+        
             <h5 class="card-title">для ділової людини</h5>
-        </div>
+        
         <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             Отримати курс!
@@ -158,25 +184,25 @@
     </div>
 
     <div class="col-sm">
-      <div class="col card about courses" id="examcourse" style="width: 18rem;">
+      <div class="col card course" id="examcourse">
         <img src="img/exam.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <div class="badge badge-primary text-wrap course">
+            
               <h5 class="card-title">підготовка до іспитів</h5>
-            </div>
-            <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+            
+            <p class="card-text">Мандруйте </p>
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Отримати курс!</button>
           </div>
       </div>
     </div>
 
     <div class="col-sm">
-      <div class="col card about courses" id="jobcourse" style="width: 18rem;">
+      <div class="col card course" id="jobcourse">
       <img src="img/worker.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <div class="badge badge-primary text-wrap course">
+        
             <h5 class="card-title">для роботи за кордоном</h5>
-        </div>
+        
         <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
             Отримати курс!
@@ -188,20 +214,63 @@
   </div>
 </div>
 
-
-
-		
-
-		
-
-		
-
-    
+<h2 class="block-title" id="">Оберіть собі викладача</h2>
 
 
 
+<div class="container" id="teachers">
+  <div class="card-deck">
 
+    <div class="col-sm">
+      <div class="col card teacher" id="travelcourse">
+        <img src="img/teacher-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Бондаренко Наталя</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col-sm">
+      <div class="col card teacher" id="travelcourse">
+        <img src="img/teacher-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Кравченко Тетяна</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="col card teacher" id="travelcourse">
+        <img src="img/teacher-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Коваленко Марина</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<h2 class="block-title" id="aboutus">Про нас</h2>
+<div>
+  <p>Школа онлайн вивчення англійської мови створена...</p>
+</div>
+<h2 class="block-title" id="contacts">Звертайтесь до нас</h2>
+
+  <button type="button" class="btn btn-primary btn-lg started-sm" data-toggle="modal" data-target="#exampleModalCenter">
+    Безкоштовний старт вже сьогодні!
+  </button>
+
+<footer class="bd-footer text-muted">
+  <div class="container-fluid p-3 p-md-5">
+    <p>Сторінка створена в рамках фінального іспиту при навчанні у Codarium Academy</p>
+    <p>&copy;Віталій Котюжанський</p>
+    <p>м. Краматорськ, 2020р.</p>
+  </div>
+</footer>
 
 
     <!-- Optional JavaScript -->
@@ -211,6 +280,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/my.js"></script>
   </body>
+
 </html>
 
 

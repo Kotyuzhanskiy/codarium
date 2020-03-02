@@ -1,85 +1,146 @@
-.navbar {background: #F97300;}
+.navbar.navbar-expand-lg.navbar-light {
+	background:	blue;
+	color: white;
+}
+
+.navbar.navbar-expand-lg.navbar-light.nofixed {
+	background:	blue;
+
+}
+
+.navbar.navbar-expand-lg.navbar-light.hidden.fixed {
+	background:	blue;
+	position: sticky;
+  	top: 0;
+    transform: translateY(0);
+    transition: transform 0.9s;
+    z-index: 300;
+}
+
 .header {
 	background-image: url('../img/Background_1.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-
-}
-.about, .team{
-	margin: 4em 0;
-	padding: 1em;
-	position: relative;
 }
 
-.about h1 {
-	color: #97300;
-	margin: 2em;
+.block-title {
+	text-align: center;	
 }
 
-.about img {
+div.jumbotron.welcom {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+  	align-items: flex-start;
+}
+
+div.jumbotron.welcom > h1.display-4 {
+	text-align: center;
+	text-shadow: -0.1rem 0 white, 0 0.1rem white, 0.1rem 0 white, 0 -0.1rem white;
+	color: black;
+	align-self: stretch;
+	}
+
+div.jumbotron.welcom > p.lead {
+	text-align: center;
+	text-shadow: -0.075rem 0 black, 0 0.075rem black, 0.075rem 0 black, 0 -0.075rem black;
+	color: white;
+	font-weight: 200;
+		
+}
+
+button.btn.btn-primary.btn-lg.started-lg {
+	justify-content: flex-end;
+}
+
+button.btn.btn-primary.btn-lg.started-sm {
+	border-radius: 0.0rem;
+	font-size: 1.1rem;
+	position: fixed;
+	width: 100%;
+	height: 3rem;
+	top: calc(100% - 3rem);
+}
+
+div.col.card.course {
+	width: 20rem;
+	text-align: center;
+	border: none;
+	border-radius: 1.25rem;
+	margin: 0.05rem 0;
+	padding: 1rem;
+}
+
+div.col.card.course img{
 	height: 100%;
 	width: 100%;
 	border-radius: 5%;
 }
-button.btn.btn-primary.btn-lg.started {
-	position: absolute;
-	top: 75%;
-	left: 5%;	
-}
 
-.course{
-	width: 15rem;
-	height: 3.5rem;
-	margin-left: -1.0em;
-	color: #007bff;
-	background-color: transparent;
-	line-height: 20px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-div.col.card.about.courses {
-	margin: 15px;
+div.col.card.teacher {
+	width: 20rem;
 	text-align: center;
 	border: none;
-	border-radius: 1rem;
+	border-radius: 1.25rem;
+	margin: 0.05rem 0;
+	padding: 1rem;
 }
 
-div.col.card.about.courses:hover {
+div.col.card.teacher img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+div.col.card.course:hover {
 	background-color: #000; 
     opacity: 0.8; 
  	transition-delay: 0.1s;
   	z-index: 100;
 }
 
-div.col.card.about.courses:hover p.card-text {
+div.col.card.course:hover h5.card-title {
 	color: white;
 	transition-delay: 0.1s;
 }
 
-div.col.card.about.courses:hover button.btn.btn-primary.btn-lg {
+div.col.card.course:hover p.card-text {
+	color: white;
+	transition-delay: 0.1s;
+}
+
+div.col.card.course:hover button.btn.btn-primary.btn-lg {
 	background-color: white;
 	border-color: white;
 	transition-delay: 0.2s;
-	color: #fd7e14;
+	color: #007bff;
 }
 
-div.col.card.about.courses:hover img {
+div.col.card.course:hover img {
 	z-index: 200;
-	
 }
 
-@media (max-width: 992px) {
-	button.btn.btn-primary.btn-lg.started {
-	padding: 0.0rem 0.0rem;
-    font-size: 2rem;
-    position: fixed;
-    width: 100%;
-    left:0%;
-    top: 0%;
-    margin-top: 35.2rem;
-    line-height: 1;
-    border-radius: 0.0rem;
-    z-index: 300;
+div.card.teacher {
+	width: 20rem
+}
+
+footer.bd-footer.text-muted {
+	background-color: black;
+	text-align: center;
+}
+
+@media (max-width: 576px) {
+	button.btn.btn-primary.btn-lg.started-lg {
+		display: none;
+	}
+	footer.bd-footer.text-muted {
+		margin-bottom: 3rem;
+	}
+}
+
+@media (min-width: 576px) {
+	button.btn.btn-primary.btn-lg.started-sm {
+		display: none;
+	}
 }
