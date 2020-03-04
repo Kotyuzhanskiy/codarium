@@ -31,6 +31,13 @@
 	text-align: center;	
 }
 
+div.about p {
+	font-size: 1.5rem;
+	line-height: 2.0rem;
+	text-align: justify;
+	margin: 1rem;
+}
+
 div.jumbotron.welcom {
 	background-color: transparent;
 	display: flex;
@@ -85,6 +92,10 @@ div.col.card.course img{
 	height: 100%;
 	width: 100%;
 	border-radius: 5%;
+}
+
+.block-title {
+	margin-top: 2rem;
 }
 
 div.col.card.teacher {

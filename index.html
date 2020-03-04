@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="uk">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://kotyuzhanskiy.github.io/codarium/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"/>
     <link rel="shortcut icon" href="img/LogoEX.ico" type="image/x-icon">
@@ -15,10 +15,10 @@
   </head>
   
   <body id="main">
-    <!-- Меню -->
+    <!-- Menu -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">
-        <img class="animated bounceInLeft" src="https://kotyuzhanskiy.github.io/codarium/img/logoEX.png"  height="30" class="d-inline-block align-top" alt="">
+        <img class="d-inline-block align-top animated bounceInLeft" src="img/logoEX.png"  height="30" alt="">
       </a>    
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,9 +32,7 @@
             <a class="nav-link" href="#start">Як почати</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Курси
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курси</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#travelcourse">для мандрівника</a>
               <a class="dropdown-item" href="#shcoolcourse">для школяра</a>
@@ -42,6 +40,7 @@
               <a class="dropdown-item" href="#businesscourse">для ділової людини</a>
               <a class="dropdown-item" href="#examcourse">підготовка до іспитів</a>
               <a class="dropdown-item" href="#jobcourse">для роботи за кордоном</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#teachers">Викладачі</a>
@@ -56,290 +55,285 @@
       </div>
     </nav>
 
-
-<header class="header">
-
-  <div class="jumbotron welcom">
-    <h1 class="display-4">Он лайн вивчення англійської мови</h1>
-  </div>
-  <div class="jumbotron welcom starting">
-    <p class="lead">Вільно керуйте своїм часом: обирайте час, інтенсивність та швидкість свого навчання</p>  
-      <button type="button" class="btn btn-primary btn-lg started-lg" data-toggle="modal" data-target="#exampleModalCenter">
-        Безкоштовний старт вже сьогодні!
-      </button> 
-  </div>
-	
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Почніть заняття вже сьогодні!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <!--header-->
+    <header class="header">
+      <div class="jumbotron welcom">
+        <h1 class="display-4">Онлайн вивчення англійської мови</h1>
+      </div>
+      <div class="jumbotron welcom starting">
+        <p class="lead">Вільно керуйте своїм часом: обирайте час, інтенсивність та швидкість свого навчання</p>  
+          <button type="button" class="btn btn-primary btn-lg started-lg" data-toggle="modal" data-target="#exampleModalCenter">
+            Безкоштовний старт вже сьогодні!
+          </button> 
       </div>
 
-      <div class="modal-body">
-        <form>  
-            <div class="form-group">
-              <label for="exampleInputPassword1">Ім'я</label>
-              <input type="text" class="form-control" id="client-name">
-              <small id="emailHelp" class="form-text text-muted">Вкажіть Ваше им'я</small>
+    	<!-- Modal window -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Почніть заняття вже сьогодні!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Електрона скринька</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">Вкажіть Вашу електрону скриньку</small>
+            <div class="modal-body">
+              <form>  
+                  <div class="form-group">
+                    <label for="InputName">Ім'я</label>
+                    <input type="text" class="form-control" id="InputName">
+                    <small class="form-text text-muted">Вкажіть, будь ласка, Ваше ім'я</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputEmail">Електрона скринька</label>
+                    <input type="email" class="form-control" id="InputEmail" aria-describedby="InputEmail">
+                    <small class="form-text text-muted">Вкажіть, будь ласка, Вашу електрону скриньку</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="InputMobile">Мобільний телефон</label>
+                    <input type="tel" class="form-control" id="InputMobile" aria-describedby="InputMobile">
+                    <small class="form-text text-muted">Вкажіть, будь ласка, Ваш мобільний телефон</small>
+                  </div>            
+              </form>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Мобільний телефон</label>
-              <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">Вкажіть Ваш мобільний телефон</small>
-            </div>            
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Відправити завяку на заняття!</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-</header>
-
-<div class="container" id="start">
-  <div class="row">   
-    <div class="about">
-      <h2 class="block-title">Як почати?</h2>
-        <div>
-          <p>Якщо ви тут, це означає, що Ви вирішили розірвати це коло та почати життя з чистого аркушу: зранку робити зарядку, кинути палити, поважати свого начальника, читати на вихідних та нарешті <span style="font-weight: bold">почати розмовляти англійською!</span> Залишився ще один крок - повідомити нас про своє бажання! Для цього натисніть на кнопку під назвою обранного курсу та вкажіть свої побажання! За декілька хвилин співробітник <span style="font-weight: bold">EX</span> зателефонує Вам задля уточення дати та часу першого заняття!
-          </p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Відправити заявку на заняття!</button>
+            </div>
+          </div>
         </div>
-    </div>
-  </div>
-</div>  
-
-
-<!-- Список курсов -->
-<div class="container" id="travelcourse">
-  <h2 class="block-title">Оберіть свій курс</h2>
-  <div class="card-deck">
-
-    <div class="col-sm">
-      <div class="col card course" id="">
-      <img src="img/travel.jpg" class="card-img-top" alt="...">
-        <div class="card-body">      
-          <h5 class="card-title">для мандрівника</h5>
-          <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
-        </div>
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-        Отримати курс!
-      </button>
       </div>
-    </div>
+    </header>
 
-    <div class="col-sm">
-      <div class="col card course" id="shcoolcourse">
-      <img src="img/schoolboy.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">для школяра</h5>
-          <p class="card-text">Мандруйте !</p>
+    <!-- Start -->
+    <div class="container" id="start">
+      <div class="row">   
+        <div class="about">
+          <h2 class="block-title">Як почати?</h2>
+            <div>
+              <p>Якщо ви тут, це означає, що Ви вирішили розірвати це коло та почати життя з чистого аркушу: зранку робити зарядку, кинути палити, поважати свого начальника, читати на вихідних та нарешті <span style="font-weight: bold">почати розмовляти англійською!</span> Залишився ще один крок - повідомити нас про своє бажання! Для цього натисніть на кнопку під назвою обранного курсу та вкажіть свої побажання! За декілька хвилин співробітник <span style="font-weight: bold">EX</span> зателефонує Вам задля уточення дати та часу першого заняття!
+              </p>
+            </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-            Отримати курс!
-        </button>
       </div>
-    </div>
+    </div>  
 
-    <div class="col-sm">
-      <div class="col card course" id="educationcourse">
-      <img src="img/education.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">для освіти за кордоном</h5>
-          <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
-        </div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-            Отримати курс!
-        </button>
-      </div>
-    </div>
+    <!-- Courses list -->
+    <div class="container" id="travelcourse">
+      <h2 class="block-title">Оберіть свій курс</h2>
+      <div class="card-deck">
 
-    <div class="col-sm">
-      <div class="col card course" id="businesscourse">
-      <img src="img/businessman.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">для ділової людини</h5>
-          <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <div class="col-sm">
+          <div class="col card course">
+            <img src="img/travel.jpg" class="card-img-top" alt="...">
+              <div class="card-body">      
+                <h5 class="card-title">для мандрівника</h5>
+                <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                Отримати курс!
+              </button>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-            Отримати курс!
-        </button>
-      </div>
-    </div>
 
-    <div class="col-sm">
-      <div class="col card course" id="examcourse">
-      <img src="img/exam.jpg" class="card-img-top" alt="...">
-        <div class="card-body">     
-          <h5 class="card-title">підготовка до іспитів</h5>
-          <p class="card-text">Мандруйте </p>
+        <div class="col-sm">
+          <div class="col card course" id="shcoolcourse">
+            <img src="img/schoolboy.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">для школяра</h5>
+                <p class="card-text">Найкращий час для початку навчання</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                  Отримати курс!
+              </button>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-          Отримати курс!
-        </button>
-      </div>
-    </div>
 
-    <div class="col-sm">
-      <div class="col card course" id="jobcourse">
-      <img src="img/worker.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">для роботи за кордоном</h5>
-          <p class="card-text">Мандруйте світом та спілкуйтесь за кордоном без обмежень!</p>
+        <div class="col-sm">
+          <div class="col card course" id="educationcourse">
+            <img src="img/education.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">для освіти за кордоном</h5>
+                <p class="card-text">Інвестиція в майбутнє</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                  Отримати курс!
+              </button>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
-          Отримати курс!
-        </button>
+
+        <div class="col-sm">
+          <div class="col card course" id="businesscourse">
+            <img src="img/businessman.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">для ділової людини</h5>
+                <p class="card-text">Отримуйте переваги в бізнесі</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                  Отримати курс!
+              </button>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="col card course" id="examcourse">
+            <img src="img/exam.jpg" class="card-img-top" alt="...">
+              <div class="card-body">     
+                <h5 class="card-title">підготовка до іспитів</h5>
+                <p class="card-text">Отримуйте потрібний результат</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                Отримати курс!
+              </button>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="col card course" id="jobcourse">
+            <img src="img/worker.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">для роботи за кордоном</h5>
+                <p class="card-text">Найкращі можливості для кожного</p>
+              </div>
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModalCenter">
+                Отримати курс!
+              </button>
+          </div>
+        </div>
+
       </div>
     </div>
 
-  </div>
-</div>
+    <!-- Teachers list -->
+    <div class="container" id="teachers">
+      <h2 class="block-title">Оберіть собі викладача</h2>
+      <div class="card-deck">
 
-<!-- Список преподавателей -->
-<div class="container" id="teachers">
-  <h2 class="block-title" id="">Оберіть собі викладача</h2>
-  <div class="card-deck">
-
-    <div class="col-sm">
-      <div class="col card teacher" id="travelcourse">
-        <img src="img/teacher-1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Бондаренко Наталя</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm">
-      <div class="col card teacher" id="travelcourse">
-        <img src="img/teacher-2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Кравченко Тетяна</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm">
-      <div class="col card teacher" id="travelcourse">
-        <img src="img/teacher-3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Коваленко Марина</h5>
-          <p class="card-text"></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="container" id="aboutus">
-  <div class="row">   
-    <div class="about">
-      <h2 class="block-title">Про нас</h2>
-        <div>
-          <p>Школа онлайн вивчення англійської мови створена... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-    </div>
-  </div>
-</div>  
-
-
-<div class="container" id="contacts">
-  <h2 class="block-title" id="">Звертайтесь до нас</h2>
-  <div class="card-deck">
-
-    <a href="tel:+380501234567">
-      <div class="col-sm">
-        <div class="col card contact contact-phone">
-          <div class="card-header">
-            <i class="fas fa-phone-square-alt" > </i>
-            <div class="contact-popup">
+        <div class="col-sm">
+          <div class="col card teacher">
+            <img src="img/teacher-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Бондаренко Наталя</h5>
               <p class="card-text"></p>
             </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">+380(50)123-45-67</p>
-          </div>
         </div>
-      </div>
-    </a>
 
-    <a href="https://goo.gl/maps/xH7GDv4QNDmT8Jib8" target="_blank">
-      <div class="col-sm">
-        <div class="col card contact contact-map">
-          <div class="card-header">
-            <i class="fas fa-map-marked-alt"> </i>
-            <div class="contact-popup">
+        <div class="col-sm">
+          <div class="col card teacher">
+            <img src="img/teacher-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Кравченко Тетяна</h5>
               <p class="card-text"></p>
             </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">вул. Академічна, б.</p>
-          </div>
         </div>
-      </div>
-    </a>
 
-    <a href="mailto:office@xata.com">
-      <div class="col-sm">
-        <div class="col card contact contact-mail">
-          <div class="card-header">
-            <i class="fas fa-envelope-square"> </i>
-            <div class="contact-popup">
+        <div class="col-sm">
+          <div class="col card teacher">
+            <img src="img/teacher-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Коваленко Марина</h5>
               <p class="card-text"></p>
             </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">office@xata.com</p>
-          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- About us -->
+    <div class="container" id="aboutus">
+      <div class="row">   
+        <div class="about">
+          <h2 class="block-title">Про нас</h2>
+            <div>
+              <p>
+                Школа дистанційного вивчення англійської мови створена як виклик бурхливому ритму нашого життя! Ми вирішили, що треба економити час в дорозі, виправити проблему пропусків занятть з англійської та зробити ваше навчання улюбленою справою вдома! English XATA - це команда викладачів, що мають окрім педагогічних вмінь ще й досвід щонайменше 5 років перебування за кордоном в англомовних країнах! Високий професіоналізм викладачів підтверджено сертифікатами Celta Cambridge English Language Assessment.
+              </p>
+            </div>
         </div>
       </div>
-    </a>
+    </div>  
 
-  </div>
-</div>  
+    <!-- Contact us -->
+    <div class="container" id="contacts">
+      <h2 class="block-title">Звертайтесь до нас</h2>
+      <div class="card-deck">
 
+        <a href="tel:+380501234567">
+          <div class="col-sm">
+            <div class="col card contact contact-phone">
+              <div class="card-header">
+                <i class="fas fa-phone-square-alt" > </i>
+                <div class="contact-popup">
+                  <p class="card-text"> </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">+380(50)123-45-67</p>
+              </div>
+            </div>
+          </div>
+        </a>
 
-  <button type="button" class="btn btn-primary btn-lg started-sm" data-toggle="modal" data-target="#exampleModalCenter">
-    Безкоштовний старт вже сьогодні!
-  </button>
+        <a href="https://goo.gl/maps/xH7GDv4QNDmT8Jib8" target="_blank">
+          <div class="col-sm">
+            <div class="col card contact contact-map">
+              <div class="card-header">
+                <i class="fas fa-map-marked-alt"> </i>
+                <div class="contact-popup">
+                  <p class="card-text"> </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">вул. Академічна, б.</p>
+              </div>
+            </div>
+          </div>
+        </a>
 
-<footer class="bd-footer text-muted">
-  <div class="container-fluid p-3 p-md-5">
-    <p>Сторінка створена в рамках фінального іспиту при навчанні у Codarium Academy</p>
-    <p>Розробник - Віталій Котюжанський</p>
-    <p>Ментор - Вікторія Середа</p>
-    <p>м. Краматорськ, 2020р.</p>
-  </div>
-</footer>
+        <a href="mailto:office@xata.com">
+          <div class="col-sm">
+            <div class="col card contact contact-mail">
+              <div class="card-header">
+                <i class="fas fa-envelope-square"> </i>
+                <div class="contact-popup">
+                  <p class="card-text"> </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">office@xata.com</p>
+              </div>
+            </div>
+          </div>
+        </a>
 
+      </div>
+    </div>  
+
+    <!-- button for small displays -->
+    <button type="button" class="btn btn-primary btn-lg started-sm" data-toggle="modal" data-target="#exampleModalCenter">
+      Безкоштовний старт вже сьогодні!
+    </button>
+
+    <!-- Footer -->
+    <footer class="bd-footer text-muted">
+      <div class="container-fluid p-3 p-md-5">
+        <p>Сторінка створена в рамках фінального іспиту при навчанні у Codarium Academy</p>
+        <p>Розробник - Віталій Котюжанський</p>
+        <p>Ментор - Вікторія Середа</p>
+        <p>м. Краматорськ, 2020р.</p>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
      crossorigin="anonymous"></script>
-
-
     <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://kotyuzhanskiy.github.io/codarium/js/my.js"></script>
+    <script src="js/my.js"></script>
   </body>
 
 </html>
