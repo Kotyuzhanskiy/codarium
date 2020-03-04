@@ -1,15 +1,16 @@
 .navbar.navbar-expand-lg.navbar-light {
-	background:	blue;
+	background:	#fff;
 	color: white;
+	border-bottom: 2px solid #00000080; 
 }
 
 .navbar.navbar-expand-lg.navbar-light.nofixed {
-	background:	blue;
+	background:	#fff;
 
 }
 
 .navbar.navbar-expand-lg.navbar-light.hidden.fixed {
-	background:	blue;
+	background:	#fff;
 	position: sticky;
   	top: 0;
     transform: translateY(0);
@@ -22,6 +23,8 @@
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .block-title {
@@ -35,6 +38,13 @@ div.jumbotron.welcom {
   	align-items: flex-start;
 }
 
+div.jumbotron.welcom.starting {
+	color: blue;
+	padding: 0px 32px 0px 32px;
+	margin-top: auto;
+	margin-bottom: 48px;
+}
+
 div.jumbotron.welcom > h1.display-4 {
 	text-align: center;
 	text-shadow: -0.1rem 0 white, 0 0.1rem white, 0.1rem 0 white, 0 -0.1rem white;
@@ -43,11 +53,10 @@ div.jumbotron.welcom > h1.display-4 {
 	}
 
 div.jumbotron.welcom > p.lead {
-	text-align: center;
-	text-shadow: -0.075rem 0 black, 0 0.075rem black, 0.075rem 0 black, 0 -0.075rem black;
-	color: white;
-	font-weight: 200;
-		
+	font-size: 2.0rem;
+	text-shadow: -0.075rem 0 white, 0 0.075rem white, 0.075rem 0 white, 0 -0.075rem white;
+	color: black;
+	font-weight: 200;	
 }
 
 button.btn.btn-primary.btn-lg.started-lg {
@@ -93,6 +102,10 @@ div.col.card.teacher img{
 	border-radius: 50%;
 }
 
+div.col.card.course p.card-text {
+	min-height: 3rem;
+}
+
 div.col.card.course:hover {
 	background-color: #000; 
     opacity: 0.8; 
@@ -108,6 +121,7 @@ div.col.card.course:hover h5.card-title {
 div.col.card.course:hover p.card-text {
 	color: white;
 	transition-delay: 0.1s;
+	min-height: 3rem;
 }
 
 div.col.card.course:hover button.btn.btn-primary.btn-lg {
@@ -130,12 +144,65 @@ footer.bd-footer.text-muted {
 	text-align: center;
 }
 
+div.col.card.contact {
+	border: none;
+	padding: 0px 0px 0px 0px;
+	margin:	0px 0px 0px 0px;
+}
+
+div.col.card.contact > a {
+	display: inline-block;
+    height: 100%;   
+}
+
+div.col.card.contact div.card-header {
+	background-color: #00000000;
+	text-align: center;
+}
+
+div.col.card.contact p.card-text {
+	text-align: center;
+}
+
+div.col.card.contact > i.fa, i.fas {
+	font-size: 4.5rem;
+	color: #00000080;
+
+}
+
+i.fab {
+	font-size: 4.5rem;
+	color: #00000080;
+}
+
+#contacts > div.card-deck {
+	justify-content: space-between;
+}
+
+#contacts a {
+	text-decoration: none !important;
+	color: #212529;
+}
+
+.contact-popup {
+	width: 150px;
+	height: 20px;
+	color: #007bff;
+}
+
 @media (max-width: 576px) {
 	button.btn.btn-primary.btn-lg.started-lg {
 		display: none;
 	}
 	footer.bd-footer.text-muted {
 		margin-bottom: 3rem;
+	}
+	div.jumbotron.welcom > h1.display-4 {
+		font-size: 2.5rem;
+	}
+	div.jumbotron.welcom > p.lead {
+		font-size: 1.5rem;
+		text-align: center;
 	}
 }
 
